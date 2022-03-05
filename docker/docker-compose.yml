@@ -19,6 +19,7 @@ services:
       - logmonnet
     environment:
       - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx2g
     ports:
       - "9200:9200"
       - "9300:9300"
