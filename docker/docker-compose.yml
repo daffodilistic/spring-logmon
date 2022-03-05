@@ -2,7 +2,8 @@ version: '3.7'
 
 services:
   maid-account-manager:
-    image: arunma/maid-account-manager:2.0
+    build: ../maid-account-manager
+    # image: arunma/maid-account-manager:2.0
     hostname: maid-account-manager
     container_name: maid-account-manager
     networks:
